@@ -63,7 +63,7 @@ class PatentSearcher:
     def _build_search_prompt(self, compound: str) -> str:
         """Build the search prompt for OpenAI."""
         return f"""
-You are an expert at finding the most relevant patents given a chemical compound with their patent ids.
+You are an expert at finding the most relevant patents given a chemical compound.
 
 ### Guidelines to follow ####
 - Given a compound you will first focus on getting all the patents which are specifically focusing on synthesis of the given compound (e.g: There is a direct mention on the synthesis of the compound in the Title, Abstract or Claim.)
